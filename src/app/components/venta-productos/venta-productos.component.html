@@ -1,0 +1,38 @@
+<div  class="container"> 
+  <div class="title">
+      <!-- Botón para regresar a la página anterior -->
+      <button type="button" class="btn btn-secondary back-button" onclick="window.location.href='principal-empleado'">Volver</button>
+      <h4>Listado de Productos</h4>
+      <button type="button" class="btn btn-primary" routerLink="/add-productos/0">Agregar</button>
+  </div>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">categoria</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Stock</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-active">
+        <td>nombre</td>
+        <td>descripcion</td>
+        <td>categorias</td>
+        <td>precio</td>
+        <td>stokc</td>
+        <td>
+            <button type="button" class="btn btn-primary btn-sm">Editar</button>
+            <button 
+              type="button" 
+              class="btn btn-danger btn-sm ms-2">
+              agregar
+            </button>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

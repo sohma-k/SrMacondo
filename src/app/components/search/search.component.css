@@ -1,0 +1,47 @@
+/* Estilos para el campo de búsqueda en el navbar */
+input {
+    background-color: rgba(255, 247, 174); /* Color de fondo del campo de búsqueda */
+    color: rgb(46, 22, 7); /* Color del texto del campo de búsqueda */
+    border: 1px solid rgba(253, 125, 19, 0.7); /* Color del borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 0.5rem; /* Espaciado interno */
+    width: 150px; /* Ancho del campo de búsqueda reducido */
+    transition: border-color 0.3s; /* Transición para el color del borde */
+}
+
+input:focus {
+    border-color: rgb(8, 125, 107); /* Color del borde cuando el campo está enfocado */
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+}
+
+/* Estilos para la lista de resultados de búsqueda */
+ul {
+    list-style: none; /* Eliminar viñetas */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar rellenos */
+    background-color: rgba(255, 247, 174); /* Color de fondo de la lista */
+    border: 1px solid rgba(253, 125, 19, 0.7); /* Color del borde */
+    border-radius: 4px; /* Bordes redondeados */
+    max-height: 150px; /* Altura máxima reducida para la lista */
+    overflow-y: auto; /* Agregar barra de desplazamiento si es necesario */
+    position: absolute; /* Posicionamiento absoluto para que aparezca sobre otros elementos */
+    z-index: 1000; /* Asegura que la lista esté sobre otros elementos */
+    width: 150px; /* Ancho de la lista de resultados igual al campo de búsqueda */
+}
+
+/* Estilos para cada ítem en la lista de resultados */
+li {
+    padding: 0.5rem; /* Espaciado interno */
+    border-bottom: 1px solid rgba(253, 125, 19, 0.7); /* Línea separadora */
+    color: rgb(46, 22, 7); /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los ítems */
+}
+
+li:hover {
+    background-color: rgba(8, 125, 107, 0.1); /* Color de fondo al pasar el mouse */
+}
+
+/* Asegúrate de que el contenedor del campo de búsqueda esté alineado correctamente */
+.search-container {
+    position: relative; /* Posiciona el contenedor de búsqueda para que los resultados se alineen correctamente */
+}

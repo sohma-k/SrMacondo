@@ -1,0 +1,71 @@
+:host {
+    display: block;
+    height: 100vh; /* Asegúrate de que el componente ocupe toda la altura de la ventana */
+    background-image: url('/assets/Fondo.jpg'); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para el contenedor del login */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    margin: auto; /* Centra el contenedor de login en la pantalla */
+    position: relative; /* Necesario para centrar el contenedor */
+    top: 50%; /* Ajusta la posición vertical */
+    transform: translateY(-50%); /* Centra verticalmente el contenedor */
+    border: 3px solid rgba(253, 125, 19, 0.7);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: rgb(88, 48, 24); /* Color del texto */
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgb(88, 48, 24);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgba(253, 125, 19, 0.7);
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: rgb(8, 125, 107);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: rgb(46, 22, 7);
+}
+
+.extra-links {
+    margin-top: 1rem;
+}
+
+.extra-links a {
+    color: rgb(8, 125, 107);
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}

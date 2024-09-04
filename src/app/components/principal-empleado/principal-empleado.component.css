@@ -1,0 +1,60 @@
+.categories-carousel {
+    position: relative; /* Mantenerlo relativo para que no se superponga */
+    top: 0; /* Asegúrate de que esté correctamente alineado */
+    left: 50%; /* Mueve el carrusel hacia el centro */
+    transform: translateX(-50%); /* Centramos horizontalmente */
+    width: 80%; /* Ancho del carrusel de categorías */
+    z-index: 1; /* No se superpondrá a otros elementos importantes */
+}
+
+.category-item-container {
+    display: flex;
+    justify-content: center; /* Centra las categorías horizontalmente */
+    align-items: stretch; /* Asegura que las categorías tengan la misma altura */
+    gap: 20px; /* Espacio entre las categorías */
+    flex-wrap: wrap; /* Asegura que las categorías se envuelvan si es necesario */
+}
+
+.category-item {
+    background: rgba(255, 247, 174, 1); /* Fondo con opacidad */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce la opacidad del shadow para menos oscuridad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Asegura el espacio entre el contenido */
+    width: 23%; /* Ancho de cada categoría */
+    height: 250px; /* Altura fija para cada categoría */
+    border: 3px solid rgba(253, 125, 19, 0.7);
+    box-sizing: border-box; /* Asegura que padding y border no cambien el tamaño del elemento */
+    flex-grow: 1; /* Permite que todos los items crezcan uniformemente */
+    flex-shrink: 0; /* Evita que se reduzcan menos de su tamaño base */
+}
+
+.category-item h5 {
+    color: rgb(88, 48, 24);
+    font-size: 1.5rem;
+    margin-bottom: 5px; /* Reducido de 10px a 5px */
+}
+
+.category-item p {
+    color: rgb(88, 48, 24);
+    font-size: 1rem;
+    margin-bottom: 10px; /* Reducido de 20px a 10px */
+}
+
+.category-item button {
+    background-color: rgb(8, 125, 107);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-item button:hover {
+    background-color: rgb(46, 22, 7);
+}

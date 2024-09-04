@@ -1,0 +1,13 @@
+body {
+    display: flex;
+  }
+  
+  #page-header {
+    margin-right: auto; /* Empuja el carrito hacia la izquierda */
+    width: 50%; /* Ajusta el ancho según sea necesario */
+  }
+  
+  .container {
+    padding: 10px; /* Ajusta el espaciado según sea necesario */
+  }
+  

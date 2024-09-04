@@ -1,0 +1,40 @@
+<div class="row mt-1">
+  <div class="col-lg-4 offset-lg-4">
+      <div class="card text-white bg-primary mb-3" style="max-width: 25rem;">
+          <div class="card-header text-center">{{ operacion }}</div>
+          <div class="card-body">
+              <form [formGroup]="form" (ngSubmit)="addEmployee()">
+                  <input formControlName="name" type="text" class="form-control" placeholder="Ingrese nombre">
+                      <span *ngIf="form.get('name')?.hasError('required') && form.get('name')?.touched">
+                          El campo nombre es <strong>requerido</strong>
+                      </span>
+                  <input formControlName="lastname" type="text" class="form-control mt-2" placeholder="Ingrese Apellido">
+                      <span *ngIf="form.get('lastname')?.hasError('required') && form.get('lastname')?.touched">
+                          El campo Apellido es <strong>requerido</strong>
+                      </span>
+                  <input formControlName="lastname2" type="text" class="form-control mt-2" placeholder="Ingrese Segundo Apellido">
+                  <input formControlName="Emp_Telefono" type="text" class="form-control mt-2" placeholder="Ingrese Telefono">
+                      <span *ngIf="form.get('Emp_Telefono')?.hasError('required') && form.get('Emp_Telefono')?.touched">
+                          El campo Telefono es <strong>requerido</strong>
+                      </span>
+                  <input formControlName="Emp_Email" type="text" class="form-control mt-2" placeholder="Ingrese Email">
+                      <span *ngIf="form.get('Emp_Email')?.hasError('required') && form.get('Emp_Email')?.touched">
+                          El campo Email es <strong>requerido</strong>
+                      </span>
+                  <input formControlName="Contrasena" type="text" class="form-control mt-2" placeholder="Ingrese Contraseña">
+                      <span *ngIf="form.get('Contrasena')?.hasError('required') && form.get('Contrasena')?.touched">
+                          El campo Contraseña es <strong>requerido</strong>
+                      </span>
+                  <div class="row mt-2 text-center">
+                      <div class="col-lg-6">
+                          <button routerLink="/empleados" type="button" class="btn btn-secundary"> volver</button>
+                      </div>
+                      <div class="col-lg-6">
+                          <button [disabled]="form.invalid" type="submit" class="btn btn-primary">aceptar</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#backgroundCarousel .carousel-item {
+  position: relative;
+}
+
+#backgroundCarousel .carousel-item img {
+  height: 650px; /* Altura del carrusel de fondo */
+  object-fit: cover;
+  width: 100%;
+}
+
+#backgroundCarousel .carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 247, 174, 0.2), rgba(255, 247, 174, 0.8));
+}
+
+.categories-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 10;
+}
+
+.category-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-item {
+  background: rgba(255, 247, 174, 1); /* Fondo con opacidad */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%; /* Ancho de cada categoría */
+  border: 3px solid rgba(253, 125, 19, 0.7);
+  box-sizing: border-box; /* Asegura que padding y border no cambien el tamaño del elemento */
+}
+
+.category-item img {
+  width: 100%; /* Ajusta el tamaño de la imagen para que ocupe el ancho del contenedor de la categoría */
+  max-width: 200px; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+  max-height: 100px; /* Ajusta la altura máxima para mantener las proporciones */
+  border-radius: 10px; /* Redondea los bordes de la imagen */
+  object-fit: cover; /* Mantiene la proporción de la imagen y recorta si es necesario */
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.category-item h5 {
+  color: rgb(88, 48, 24);
+  font-size: 1.5rem;
+  margin-bottom: 5px; /* Reducido de 10px a 5px */
+}
+
+.category-item p {
+  color: rgb(88, 48, 24);
+  font-size: 1rem;
+  margin-bottom: 10px; /* Reducido de 20px a 10px */
+}
+
+.category-item button {
+  background-color: rgb(8, 125, 107);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-item button:hover {
+  background-color: rgb(46, 22, 7);
+}

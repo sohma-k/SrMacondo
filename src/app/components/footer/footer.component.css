@@ -1,0 +1,58 @@
+.footer {
+    background: linear-gradient(rgb(0, 255, 217), rgb(8, 125, 107)); /* Gradiente de fondo */
+    padding: 2rem 2rem; /* Ajusta el padding */
+    color: rgb(88, 48, 24); /* Color del texto */
+}
+
+.footer h3 {
+    color: rgb(46, 22, 7); /* Color del título */
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 1.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 247, 174); /* Color de los enlaces */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(253, 125, 19); /* Color de hover en los enlaces */
+}
+
+.footer-section.social a img {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: 30px; /* Ajusta la altura del ícono */
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-section.social a img:hover {
+    transform: scale(1.2); /* Efecto de aumento al hacer hover */
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(253, 125, 19, 0.7); /* Borde superior */
+    padding-top: 1rem;
+    color: rgb(88, 48, 24);
+}

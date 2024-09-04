@@ -1,0 +1,46 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .btn-primary {
+    background-color: rgb(8, 125, 107);
+    border-color: rgb(8, 125, 107);
+  }
+  
+  .btn-danger {
+    background-color: rgb(220, 53, 69);
+    border-color: rgb(220, 53, 69);
+  }
+  

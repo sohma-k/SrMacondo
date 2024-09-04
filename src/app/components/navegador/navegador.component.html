@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fuente" [routerLink]="['/login']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" href="/login">Iniciar Sesión</a>
+        </li>
+      </ul>
+      <div class="search-container" *ngIf="shouldShowSearch()">
+        <div class="search-box">
+          <input
+            [(ngModel)]="query"
+            (ngModelChange)="onSearchChange($event)"
+            placeholder="Search..."
+          />
+          <ul class="search-results">
+            <li *ngFor="let product of products">
+              <div class="product-name">{{ product.name }} - ${{ product.price }}</div>
+              <!-- Botón para agregar al carrito -->
+              <button (click)="agregarProductoAlCarrito(product)" class="btn btn-primary btn-sm">Agregar al carrito</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

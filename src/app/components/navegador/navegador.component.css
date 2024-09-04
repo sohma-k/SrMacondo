@@ -1,0 +1,61 @@
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(rgb(0, 255, 217), rgb(8, 125, 107)) !important; /* Gradiente de fondo */
+    padding: 0.5rem 2rem; /* Ajusta el padding para reducir la altura del navbar */
+    height: 60px; /* Ajusta la altura del navbar */
+    line-height: 60px; /* Alinea el texto verticalmente dentro del navbar */
+  }
+  
+  .navbar-brand, .navbar-nav .nav-link {
+    color: rgb(88, 48, 24); /* Color de texto similar al botón del carrusel */
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: rgba(255, 247, 174); /* Color de hover consistente con los botones */
+  }
+  
+
+  /* Search Box Styles */
+  .search-container {
+    display: flex;
+    align-items: center; /* Alinea el campo de búsqueda verticalmente */
+    position: relative; /* Asegura que el contenedor tenga un contexto de posicionamiento */
+  }
+  
+
+  
+  .search-box input {
+    width: 300px; /* Ancho fijo del campo de búsqueda */
+    height: 30px; /* Ajusta la altura del campo de búsqueda */
+    padding: 0.3rem; /* Padding interno para el campo de búsqueda */
+    border: 1px solid rgba(253, 125, 19, 0.7); /* Borde del campo de búsqueda */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 0.875rem; /* Tamaño de fuente ajustado para mejor visualización */
+  }
+  
+  .search-results {
+    position: absolute; /* Posiciona los resultados de búsqueda sobre el contenedor */
+    top: 100%; /* Alinea la parte superior de los resultados con el fondo del campo de búsqueda */
+    left: 0; /* Alinea la parte izquierda de los resultados con el campo de búsqueda */
+    width: 300px; /* Ancho fijo de los resultados para que coincida con el campo de búsqueda */
+    max-height: 150px; /* Altura máxima para los resultados de búsqueda */
+    overflow-y: auto; /* Habilita el scroll vertical si hay muchos resultados */
+    background: white; /* Fondo blanco para los resultados */
+
+    border-radius: 4px; /* Bordes redondeados para los resultados */
+    z-index: 1000; /* Asegura que los resultados estén sobre otros elementos */
+    padding: 0; /* Elimina el padding interno de la lista */
+  }
+  
+  .search-results li {
+    padding: 0.5rem; /* Padding interno para cada elemento de la lista */
+    border-bottom: 1px solid #ddd; /* Borde inferior para cada elemento de la lista */
+    font-size: 0.875rem; /* Tamaño de fuente ajustado para los elementos de la lista */
+  }
+  
+  .search-results .product-name {
+    font-weight: bold; /* Nombre del producto en negrita */
+  }
+  

@@ -1,0 +1,18 @@
+<div *ngIf="!loading" class="container">
+  <app-carrito *ngIf="carritoNoVacio"></app-carrito>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of listProducts">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+            <p class="card-text"><strong>Precio:</strong> {{ item.price | currency }}</p>
+            <p class="card-text"><strong>Stock:</strong> {{ item.stock }}</p>
+            <button (click)="agregarCarrito(item)" type="button" class="btn btn-secundary">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <app-footer></app-footer>
